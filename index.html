@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->
     <!-- 警告：Respond.js 無法在 file:// 協定下運作 -->
     <!--[if lt IE 9]>
@@ -17,18 +16,32 @@
 </head>
 
 <body>
-    <input type="checkbox" name="item1" data-code="1"><label>日期1</label>
-    <form class="form-inline" role="form">
-        <div class="form-group">
-            <label class="sr-only" for="exampleInputPassword2">密碼</label>
-            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="密碼">
+    <form>
+        <h1>請選擇可以的日期:</h1>
+        <div id='list'>
+            <input type="checkbox" name="item1" data-code="1">
+            <label>日期1</label>
+            <br>
+            <input type="checkbox" name="item2" data-code="2">
+            <label>日期2</label>
+            <br>
+            <input type="checkbox" name="item3" data-code="3">
+            <label>日期3</label>
+            <br>
         </div>
-        <button type="submit" class="btn btn-default">登入</button>
+        <div class="form-group">
+            <input type="checkbox" style="display: inline;">
+            <input style="display: inline;" type="text" class="form-control" id="date" placeholder="輸入日期">
+        </div>
+        <input type="button" id="button" class="btn btn-default" value="新增" />
+       
+        <br>
+        <input type="button" id="button2" class="btn btn-default" type="submit" value="下一步" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
+        <script src="js/dateChoise.js"></script>
     </form>
-    <!-- jQuery (Bootstrap 所有外掛均需要使用) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
-    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
