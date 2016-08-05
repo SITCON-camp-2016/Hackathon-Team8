@@ -42,33 +42,32 @@
         </div>
         <div class=container>
             <div class=row>
-                <form id=tosubmit>
-                    <div class=col-md-4>
-                        <h2 class=cg-font>活動名稱</h2>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Activity name">
-                        </div>
-                    </div>
-                    <div class=col-md-4>
-                        <h2 class=cg-font>日期</h2>
-                        <p class=cg-font>請依照西元年月日方式輸入</p>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Ex:20160925">
-                        </div>
-                        <h2 class=cg-font>活動天數</h2>
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class=col-md-4>
-                        <h2 class=cg-font>人數限制</h2>
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <br><br><br><br><br><br><br>
-                            <input id="submitac" type="submit" class="btn btn-default" value="提交活動" >
-                        </div>
-                    </div>
-                </form>
+                    <form>
+        <h1>請選擇可以的日期:</h1>
+        <div id='list'>
+            <input type="checkbox" name="item1" data-code="1">
+            <label>日期1</label>
+            <br>
+            <input type="checkbox" name="item2" data-code="2">
+            <label>日期2</label>
+            <br>
+            <input type="checkbox" name="item3" data-code="3">
+            <label>日期3</label>
+            <br>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" style="display: inline;">
+            <input style="display: inline;" type="text" class="form-control" id="date" placeholder="輸入日期">
+        </div>
+        <input type="button" id="button" class="btn btn-default" value="新增" />
+       
+        <br>
+        <input type="button" id="button2" class="btn btn-default" type="submit" value="下一步" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
+        <script src="js/dateChoise.js"></script>
+    </form>
             </div>
             <hr>
             <footer>
